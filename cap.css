@@ -41,3 +41,23 @@ padding: 48px 0px 48px 0px;
 width:1,344px;
 height:2,947px;
 }
+.image{
+width:1,344px;
+height:1,156px;
+padding: 96px 0px 96px 0px;
+gap: 52px;
+border: 0px 0px 1.5px 0px;
+}
+.collage{
+width: 1,344px;
+height: Hug (1,207px)px;
+border: 0px 0px 1.5px 0px;
+opacity: 0px;
+}
+.getintouch{
+width:1,344px;
+height:584px;
+padding: 52px 0px 52px 0px;
+gap: 52px;
+border: 0px 0px 1.5px 0px;
+}

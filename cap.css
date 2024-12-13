@@ -1,3 +1,18 @@
 *{
     margin:0;
 }
+.landingpage{
+width:1,440px;
+height:3,311px;
+padding-right:48px;
+padding-left:48px;
+}
+.personal
+{
+width:1,344px;
+height:88px;
+padding: 20px 0px 20px 0px;
+border: 0px 0px 1.5px 0px;
+display: flex;
+justify-content: space-between;
+}

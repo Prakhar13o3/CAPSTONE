@@ -105,6 +105,12 @@ form input[type="submit"] {
     padding: 10px 20px;
     border-radius: 16px;
 }
+form .boxi{
+    height:124px;
+    width:700px;
+    border-radius: 16px;
+    border: 1.5px solid #ccc;
+}
 .footer {
     text-align: center;
     padding: 20px 0;

@@ -16,3 +16,28 @@ border: 0px 0px 1.5px 0px;
 display: flex;
 justify-content: space-between;
 }
+.logo{
+width:186px;
+height:48px;
+gap: 12px;
+}
+.logo span{
+font-family: 'Source Serif 4', sans-serif;
+font-size: 42px;
+font-weight: 600;
+line-height: 42px;
+}
+.pagelinks a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:black;
+}
+.container{
+width:1,344px;
+height:3,043px;
+padding: 48px 0px 48px 0px;
+}
+.maincontent{
+width:1,344px;
+height:2,947px;
+}

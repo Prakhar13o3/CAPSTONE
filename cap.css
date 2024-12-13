@@ -64,15 +64,14 @@ border: 0px 0px 1.5px 0px;
 .tagline img{
 width: 1344px;
 height: 672px;
-border-radius: 28px 0px 0px 0px;
-border: 1.5px 0px 0px 0px;
+border-radius: 28px
 }
 .tagline div{
 width: 1344px;
 height: 240px;
 }
 .explore{
-    margin-bottom: -80px;
+    margin-bottom: -100px;
 }
 .tagline div{
 font-family: Roboto Serif;
@@ -81,3 +80,30 @@ font-weight: 700;
 line-height: 120px;
 text-align: center;
 }
+.row1,.row2,.row3{
+    display: flex;
+    justify-content: center;
+}
+.row1 img{
+    width: 413.33px;
+    height: 275px;  
+    border-radius: 16px;
+    border: 1.5px 0px 0px 0px;
+}
+.row2 img{
+    width: 413.33px;
+    height: 275px;  
+    border-radius: 16px;
+    border: 1.5px 0px 0px 0px;
+}
+.row3 img{
+    width: 413.33px;
+    height: 275px;  
+    border-radius: 16px;
+    border: 1.5px 0px 0px 0px;
+}
+.rows{
+    gap:30px;
+    margin-bottom: 20px;
+}
+

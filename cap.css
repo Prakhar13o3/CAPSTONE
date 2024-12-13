@@ -106,4 +106,7 @@ text-align: center;
     gap:30px;
     margin-bottom: 20px;
 }
-
+.footer .box{
+    display: flex;
+    justify-content: space-between;
+}

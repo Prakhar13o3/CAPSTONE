@@ -49,6 +49,7 @@ body {
 }
 .collage {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 52px;
@@ -84,32 +85,39 @@ body {
     margin-bottom: 32px;
 }
 form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
+form .fullname {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+}
 form input {
-    width: 100%;
-    max-width: 500px;
+    width: 45%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    background-color: #7D512617;
 }
 form input[type="submit"] {
     width: auto;
-    background-color:#D4A373;
-    color: white;
+    background-color: #D4A373;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 16px;
 }
-form .boxi{
-    height:124px;
-    width:700px;
+form #boxi {
+    width: 45%;
+    min-height: 150px;
+    background-color: #7D512617;
+    padding:10px;
     border-radius: 16px;
-    border: 1.5px solid #ccc;
+    border: 1px solid #ccc;
 }
 .footer {
     text-align: center;
@@ -129,4 +137,116 @@ form .boxi{
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 10px;
+}
+form input[type="email"] {
+    border-radius: 10px;
+}
+.logo{
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    .landingpage {
+        padding: 0 24px;
+    }
+
+    .tagline div {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .rows img {
+        width: 300px;
+        height: 200px;
+    }
+
+    form input, form .boxi {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .fullname {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pagelinks a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .personal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .tagline div {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .collage {
+        gap: 20px;
+    }
+
+    .rows img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .footer .box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo span {
+        font-size: 32px;
+    }
+
+    .fullname {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landingpage {
+        padding: 0 16px;
+    }
+
+    .tagline div {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .pagelinks a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .rows img {
+        width: 100%;
+        height: auto;
+    }
+
+    form input, form .boxi, .footer button {
+        width: 100%;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+
+    .personal {
+        gap: 10px;
+    }
+
+    .footer .box {
+        align-items: flex-start;
+    }
 }

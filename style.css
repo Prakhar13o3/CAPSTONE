@@ -93,9 +93,9 @@
   padding: 96px 0;
 }
 .hero-section h2 {
-  font-family: Calistoga;
-  font-size: 9rem;
-  font-weight: 400;
+  font-family: Roboto serif;
+  font-size: 10rem;
+  font-weight: 700;
 }
 .hero-image {
   aspect-ratio: 2;
@@ -295,7 +295,7 @@ footer a {
     font-size: 1rem;
   }
   .hero-section h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .form-grid {
     flex-direction: column;

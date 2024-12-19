@@ -1,6 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Calistoga&family=Chivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Calistoga&family=Chivo:ital,wght@0,100..900;1,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/porter-sans-block');
 * {
   margin: 0;
   padding: 0;
@@ -25,17 +25,16 @@
 }
 
 .logo {
-  font-family: Source Serif 4;
-  font-size: 2.635rem;
+  font-family: Porter Sans Block;
+  font-size: 2.75rem;
   font-weight: 400;
-  color: #28211B;
 }
 .nav-links a {
-  font-family: Roboto Serif;
+    font-family: Calistoga;
   font-size: 1.75rem;
-  font-weight: 400;  
-  color: #1C221B;
+  font-weight: 400;
   text-decoration: none;
+  color: #1C221B;
 }
 .nav-links {
   display: flex;
@@ -93,15 +92,16 @@
 }
 .hero-section h2 {
   font-family: Calistoga;
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 400;
-
-
 }
 .hero-image {
+  aspect-ratio: 2;
+  object-fit: contain;
+  object-position: center;
   width: 100%;
+  background-blend-mode: normal;
   margin-top: 48px;
-  border-radius: 1.75rem;
 }
 
 .gallery-section {
@@ -134,6 +134,8 @@
   min-height: 333px;
   flex-direction: column;
   justify-content: start;
+  flex: 1;
+  flex-basis: 0%;
 }
 
 .gallery-image {
@@ -142,7 +144,7 @@
   object-position: center;
   width: 100%;
   background-blend-mode: normal;
-  border-radius: 1rem;
+  flex: 1;
 }
 
 .gallery-caption {
@@ -155,17 +157,17 @@
 }
 
 .location-title {
-  font-family: Public Sans;
-  font-size: 1.25rem;
-  font-weight: 400;  
+  font-family: Courier Prime;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #1C221B;
 }
 
 .category-label {
-  font-family: Public Sans;
-  font-size: 1rem;
+  font-family: Courier Prime;
+  font-size: 1.1rem;
   font-weight: 400;
-  color: #2E21149E;
+  color: #1C221B;
 }
 
 .contact-section {
@@ -204,29 +206,25 @@
 }
 
 .texts h1 {
-  font-family: Roboto Serif;
+  font-family: Calistoga;
   font-size: 2.1rem;
-  font-weight: 700;
-  color: #28211B;
+  font-weight: 400;
 }
 
 .texts p {
-  font-family: Public Sans;
-  font-size: 1.25rem;
-  font-weight: 400;  
-  color: #28211B;
+  font-family: Courier Prime;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  border: none;
+  gap: 1rem;
 }
 
 .form-grid {
-  border: none;
   width: 100%;
   display: flex;
   gap: 3rem;
@@ -237,31 +235,28 @@ input, textarea {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid black;
-  border-radius: 1rem;
+  border-radius: 4px;
   font-size: 1rem;
   background-color: #7D512617;
 }
-form input {
-  border: none;
-}
+
 textarea {
   height: 100%;
   min-height: 150px;
   resize: vertical;
-  border: none;
 }
 
 .submit-btn {
   width: fit-content;
   background-color: #D4A373;
-  padding: 0.625rem 1.25rem;
-  border-radius: 1rem;
+  font-family: Courier Prime;
+  font-size: 1rem;
+  font-weight: 400;  
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-
-  font-family: Public Sans;
-  font-size: 1rem;
-  font-weight: 500;  
 }
 
 footer {
@@ -272,24 +267,22 @@ footer {
   padding-top: 2rem;
 }
 footer p {
-  font-family: Roboto Serif;
-  font-size: 1.75rem;
-  color: #2E21149E;
-  font-weight: 400;
-}
-
-.btn {
-  border: 1.5px solid #6E5C4933;
-  border-radius: 1rem;
-  padding: 0.875rem 2rem;
-
-  text-decoration: none;
-  font-family: Public Sans;
+  font-family: Calistoga;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #28211B;
-
 }
+
+footer a {
+  text-decoration: none;
+  font-family: Courier Prime;
+  font-size: 1.4rem;
+  color: #1C221B;
+
+  border: 1px solid #00000029;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -303,11 +296,7 @@ footer p {
     font-size: 1rem;
   }
   .hero-section h2 {
-    font-size: 4rem;
-  }
-  .hero-image {
-    width: 100%;
-    border-radius: 1rem;
+    font-size: 3rem;
   }
   .form-grid {
     flex-direction: column;
@@ -317,45 +306,27 @@ footer p {
     padding: 0;
     margin: 0.5rem;
   }
-  .gallery-section {
-    justify-content: center;
-    align-items: center;
-  }
-  .gallery-row {
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .travel-section {
     padding: 0 1rem;
     justify-content: center;
     align-items: center;
   }
-  .hero-section h2 {
-    font-size: 2rem !important;
-  }
   .header {
     gap: 1rem;
-    justify-content: center;
-    flex-direction: column;
-
   }
   .logo {
     font-size: 1.5rem;
   }
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .nav-links a {
-    font-size: 1.25rem;
+    display: none;
   }
   .hero-section {
-    margin: 0 0 5rem 0;
+    margin: 0;
     padding: 0;
   }
   .hero-section h2 {
@@ -382,9 +353,5 @@ footer p {
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
-  }
-  .gallery-row {
-    padding: 0;
-    gap: 0;
   }
 }
